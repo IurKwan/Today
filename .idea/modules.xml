@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Today.iml" filepath="$PROJECT_DIR$/Today.iml" />
-      <module fileurl="file://D:\AndroStudio_My_Project\Today\Today.iml" filepath="D:\AndroStudio_My_Project\Today\Today.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\AndroStudio_My_Project\Today\app\app.iml" filepath="D:\AndroStudio_My_Project\Today\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -2,6 +2,7 @@ package com.krbb.today;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -39,11 +40,21 @@ public class MainActivity extends AppCompatActivity implements OnChannelListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
         mButton = findViewById(R.id.button);
         mImageView = findViewById(R.id.close);
         mRecyclerView = findViewById(R.id.recy);
 
+
         View bottomSheet = findViewById(R.id.bottomsheet);
+
+        CoordinatorLayout.LayoutParams lp = (CoordinatorLayout.LayoutParams) bottomSheet.getLayoutParams();
+        lp.setMargins(0, 200, 0, 0);
+        bottomSheet.setLayoutParams(lp);
+
+
         behavior = BottomSheetBehavior.from(bottomSheet);
         behavior.setSkipCollapsed(true);
         //默认设置为隐藏
